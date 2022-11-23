@@ -24,13 +24,13 @@ public class ProductosDb {
       ResultSet result = stmt.executeQuery(query);
       while (result.next()) {
         Productos producto = new Productos(
-            result.getString("nombre"),
-            result.getString("categoria"),
-            result.getString("foto"),
-            result.getString("fecha_expiracion"),
-            result.getFloat("precio"),
             result.getInt("id"),
-            result.getInt("fav"));
+            result.getString("nombre"),
+            result.getFloat("precio"),
+            result.getInt("categoria_id"),
+            result.getString("fotoUrl"),
+            result.getString("fecha_expiracion"),
+            result.getString("fecha_preparacion"));
 
         productos.add(producto);
       }
