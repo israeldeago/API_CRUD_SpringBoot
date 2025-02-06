@@ -38,6 +38,5 @@ jobs:
           SONAR_TOKEN: "${{ secrets.SONAR_TOKEN }}"
         run: sonar-scanner \
           -Dsonar.projectKey=PrjectoL0c4l- \
-          -Dsonar.sources=. \
           -Dsonar.host.url=$SONAR_HOST_URL \
           -Dsonar.login=$SONAR_TOKEN
