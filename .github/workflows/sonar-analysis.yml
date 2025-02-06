@@ -39,6 +39,6 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: sonar-scanner \
           -Dsonar.projectKey=mi_proyecto_seguro \
-          -Dsonar.sources=. \
+          -Dsonar.sources= ~/sonar-scanner-4.8.0.2856-linux/ \
           -Dsonar.host.url=$SONAR_HOST_URL \
           -Dsonar.login=$SONAR_TOKEN
