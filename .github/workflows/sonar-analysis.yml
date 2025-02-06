@@ -38,5 +38,4 @@ jobs:
           SONAR_HOST_URL: http://127.0.0.1:9000
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: sonar-scanner \
-          -Dsonar.projectKey=GitHub_Action_UTP \
-          -Dsonar.login=$SONAR_TOKEN
+          -Dsonar.projectKey=GitHub_Action_UTP
