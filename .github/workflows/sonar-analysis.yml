@@ -35,7 +35,7 @@ jobs:
 
       - name: Run SonarScanner
         env:
-          SONAR_HOST_URL: http://localhost:9000
+          SONAR_HOST_URL: http://127.0.0.1:9000
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: sonar-scanner \
           -Dsonar.projectKey=mi_proyecto_seguro \          
